@@ -17,47 +17,107 @@ notes = {
   3: {
     "note": "D#/Eb",
     "octave": 0,
-    "frequency": 19.45,
+    "frequency": 19.45
   },
   4: {
     "note": "E",
     "octave": 0,
     "frequency": 20.60
   },
-  2: {
-    "note": "D",
+  5: {
+    "note": "F",
     "octave": 0,
-    "frequency": 18.35
+    "frequency": 21.83
   },
-  0: {
+  6: {
+    "note": "F#/Gb",
+    "octave": 0,
+    "frequency": 23.12,
+  },
+  7: {
+    "note": "G",
+    "octave": 0,
+    "frequency": 24.50
+  },
+  8: {
+    "note": "G#/Ab",
+    "octave": 0,
+    "frequency": 25.96
+  },
+  9: {
+    "note": "A",
+    "octave": 0,
+    "frequency": 27.50
+  },
+  10: {
+    "note": "A#/Bb",
+    "octave": 0,
+    "frequency": 29.314
+  },
+  11: {
+    "note": "B",
+    "octave": 0,
+    "frequency": 30.87
+  },
+  12: {
     "note": "C",
-    "octave": 0,
-    "frequency": 16.35,
+    "octave": 1,
+    "frequency": 32.70,
   },
-  1: {
+  13: {
     "note": "C#/Db",
-    "octave": 0,
-    "frequency": 17.32
+    "octave": 1,
+    "frequency": 34.65
   },
-  2: {
+  14: {
     "note": "D",
-    "octave": 0,
-    "frequency": 18.35
+    "octave": 1,
+    "frequency": 36.71
   },
-  0: {
-    "note": "C",
-    "octave": 0,
-    "frequency": 16.35,
+  15: {
+    "note": "D#/Eb",
+    "octave": 1,
+    "frequency": 38.89
   },
-  1: {
-    "note": "C#/Db",
-    "octave": 0,
-    "frequency": 17.32
+  16: {
+    "note": "E",
+    "octave": 1,
+    "frequency": 41.20
   },
-  2: {
-    "note": "D",
-    "octave": 0,
-    "frequency": 18.35
+  17: {
+    "note": "F",
+    "octave": 1,
+    "frequency": 43.65
+  },
+  18: {
+    "note": "F#/Gb",
+    "octave": 1,
+    "frequency": 46.25,
+  },
+  19: {
+    "note": "G",
+    "octave": 1,
+    "frequency": 49.00
+  },
+  20: {
+    "note": "G#/Ab",
+    "octave": 1,
+    "frequency": 51.91
+  },
+  21: {
+    "note": "A",
+    "octave": 1,
+    "frequency": 55.00
+  },
+  22: {
+    "note": "A#/Bb",
+    "octave": 1,
+    "frequency": 58.27
+  },
+  23: {
+    "note": "B",
+    "octave": 1,
+    "frequency": 61.74
   }
 }
 
