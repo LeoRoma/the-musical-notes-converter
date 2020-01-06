@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="./public/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.1.0/mustache.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./src/menu.js"></script>
+    <script src="./src/converter.js"></script>
 </head>
 
 <body>
@@ -32,20 +32,70 @@
         </p>
     </div>
     <div class="container">
-        <h2>Inline form</h2>
+        <h2>Number</h2>
         <p>Choose a number from 0 to 96</p>
         <div class="form-group row">
             <div class="col-xs-3">
                 <label for="number">Number:</label>
-                <input class="form-control" id="number" type="number">
+                <input class="form-control" id="number" type="number" name="number">
             </div>
-            <div class="col-xs-3">
-                <label for="note">Note:</label>
-                <input class="form-control" id="note" type="text">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <button class="btn btn-outline-primary submit-number" type="button">Submit</button>
         </div>
+        <p id="result-number"></p>
     </div>
+
+    <div class="container">
+        <h2>Note</h2>
+        <p>Insert a character from A to F</p>
+        <div class="form-group row">
+            <div class="col-xs-3">
+                <label for="number">Note:</label>
+                <input class="form-control note" id="note" type="text" name="note">
+            </div>
+            <button class="btn btn-outline-primary submit-note" type="button">Submit</button>
+        </div>
+        <p id="result-note"></p>
+    </div>
+
+    <div class="container">
+        <h2>Chords maj</h2>
+        <p>Insert a character from A to F</p>
+        <div class="form-group row">
+            <div class="col-xs-3">
+                <label for="number">Note:</label>
+                <input class="form-control chord-maj" id="chord-maj" type="text" name="chord-maj">
+            </div>
+            <button class="btn btn-outline-primary submit-chord-maj" type="button">Submit</button>
+        </div>
+        <p id="result-chord-maj"></p>
+    </div>
+
+    <div class="container">
+        <h2>Chords min</h2>
+        <p>Insert a character from A to F</p>
+        <div class="form-group row">
+            <div class="col-xs-3">
+                <label for="number">Note:</label>
+                <input class="form-control chord-min" id="chord-min" type="text" name="chord-min">
+            </div>
+            <button class="btn btn-outline-primary submit-chord-min" type="button">Submit</button>
+        </div>
+        <p id="result-chord-min"></p>
+    </div>
+
+    <div class="container">
+        <h2>Scale maj</h2>
+        <p>Insert a character from A to F</p>
+        <div class="form-group row">
+            <div class="col-xs-3">
+                <label for="number">Note:</label>
+                <input class="form-control scale-maj" id="scale-maj" type="text" name="scale-maj">
+            </div>
+            <button class="btn btn-outline-primary submit-scale-maj" type="button">Submit</button>
+        </div>
+        <p id="result-scale-maj"></p>
+    </div>
+
 
 
     <!-- FOOTER  -->
