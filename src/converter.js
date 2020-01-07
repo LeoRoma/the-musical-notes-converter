@@ -121,20 +121,104 @@ notes = {
   }
 }
 
+numbers = {
+  "C": {
+    "number": 0,
+    "octave": 0,
+    "frequency": 16.35,
+  },
+  "C#": {
+    "number": 1,
+    "octave": 0,
+    "frequency": 17.32
+  },
+  "Db": {
+    "note": 1,
+    "octave": 0,
+    "frequency": 18.35
+  },
+  "D": {
+    "number": 2,
+    "octave": 0,
+    "frequency": 19.45
+  },
+  "D#": {
+    "number": 3,
+    "octave": 0,
+    "frequency": 20.60
+  },
+  "Eb": {
+    "number": 3,
+    "octave": 0,
+    "frequency": 21.83
+  },
+  "E": {
+    "number": 4,
+    "octave": 0,
+    "frequency": 23.12,
+  },
+  "F": {
+    "number": 5,
+    "octave": 0,
+    "frequency": 24.50
+  },
+  "F#": {
+    "number": 6,
+    "octave": 0,
+    "frequency": 25.96
+  },
+  "Gb": {
+    "number": 6,
+    "octave": 0,
+    "frequency": 27.50
+  },
+  "G": {
+    "number": 7,
+    "octave": 0,
+    "frequency": 29.314
+  },
+  "G#": {
+    "number": 8,
+    "octave": 0,
+    "frequency": 30.87
+  },
+  "Ab": {
+    "number": 8,
+    "octave": 0,
+    "frequency": 25.96
+  },
+  "A": {
+    "number": 9,
+    "octave": 0,
+    "frequency": 27.50
+  },
+  "A#": {
+    "number": 10,
+    "octave": 0,
+    "frequency": 29.314
+  },
+  "Bb": {
+    "number": 10,
+    "octave": 0,
+    "frequency": 30.87
+  },
+  "B": {
+    "number": 11,
+    "octave": 0,
+    "frequency": 30.87
+  }
+}
+
 $(document).ready(function () {
 
-  var $result= $('#result');
+  var $result = $('#result');
 
   $(".submit").click(function (event) {
     let num = $("input").first().val();
-    console.log(num);
-    console.log(notes[num]);
-    console.log(notes[num].note)
-    console.log(notes[num].octave)
-    console.log(notes[num].frequency)
-    $result.append('<p>Your note is: ' + notes[num].note + '<br>' + 
-                   'It octave is: ' + notes[num].octave + '<br>' +
-                   'The frequency is: ' + notes[num].frequency + 'Hz' + '</p>');
+    $result.append('<p>Your note is: ' + notes[num].note + '<br>' +
+      'It octave is: ' + notes[num].octave + '<br>' +
+      'The frequency is: ' + notes[num].frequency + 'Hz' + '</p>'
+    );
   });
 
 });
