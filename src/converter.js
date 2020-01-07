@@ -211,13 +211,21 @@ numbers = {
 
 $(document).ready(function () {
 
-  var $result = $('#result');
+  var $resultNote = $('#result-note');
+  var $resultNumber = $('#result-number');
 
-  $(".submit").click(function (event) {
-    let num = $("input").first().val();
-    $result.append('<p>Your note is: ' + notes[num].note + '<br>' +
+  $(".submit-number").click(function (event) {
+    let num = $("#number").first().val();
+    $resultNumber.append('<p>Your note is: ' + notes[num].note + '<br>' +
       'It octave is: ' + notes[num].octave + '<br>' +
       'The frequency is: ' + notes[num].frequency + 'Hz' + '</p>'
+    );
+  });
+
+  $(".submit-note").click(function (event) {
+    let note = $("#note").first().val();
+    console.log(numbers[note]);
+    $resultNote.append('<p>Your number is: ' + numbers[note].number + '<p>'
     );
   });
 
