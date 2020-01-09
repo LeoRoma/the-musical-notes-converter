@@ -211,13 +211,13 @@ numbers = {
 
 scale = ['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'] 
 
-console.log(scale['C'])
-
 $(document).ready(function () {
 
   var $resultNote = $('#result-note');
   var $resultNumber = $('#result-number');
+  var $resultChord = $('#result-chord');
 
+  //it converts number to note
   $(".submit-number").click(function (event) {
     let num = $("#number").first().val();
     $resultNumber.append('<p>Your note is: ' + notes[num].note + '<br>' +
@@ -226,11 +226,21 @@ $(document).ready(function () {
     );
   });
 
+  //it converts note to number
   $(".submit-note").click(function (event) {
     let note = $("#note").first().val();
     console.log(numbers[note]);
     $resultNote.append('<p>Your number is: ' + numbers[note].number + '<p>'
     );
   });
+
+  //it returns a chord
+  $(".submit-chord").click(function (event) {
+    let chord = $("#chord").first().val();
+    console.log(`${scale[scale.indexOf(chord)]} + ${scale[scale.indexOf(chord) + 2]} + ${scale[scale.indexOf(chord) + 4]}`);
+    $resultChord.append('<p>Your chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 2]} ${scale[scale.indexOf(chord) + 4]}` + '<p>');
+    
+  });
+
 
 });
