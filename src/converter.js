@@ -238,15 +238,13 @@ $(document).ready(function () {
   //it returns a chord maj
   $(".submit-chord-maj").click(function (event) {
     let chord = $("#chord-maj").first().val();
-    console.log(`${scale[scale.indexOf(chord)]} + ${scale[scale.indexOf(chord) + 2]} + ${scale[scale.indexOf(chord) + 4]}`);
     $resultChordMaj.append('<p>Your chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 4]} ${scale[scale.indexOf(chord) + 7]}` + '<p>');
   });
 
   //it returns a chord min
   $(".submit-chord-min").click(function (event) {
     let chord = $("#chord-min").first().val();
-    console.log(`${scale[scale.indexOf(chord)]} + ${scale[scale.indexOf(chord) + 2]} + ${scale[scale.indexOf(chord) + 4]}`);
     $resultChordMin.append('<p>Your chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 3]} ${scale[scale.indexOf(chord) + 7]}` + '<p>');
-  I});
+  });
 
 });
