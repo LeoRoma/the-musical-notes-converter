@@ -209,7 +209,8 @@ numbers = {
   }
 }
 
-scale = ['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'] 
+scale = ['C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab', 'A', 'A#/Bb', 'B'];
+scale.push(...scale)
 
 $(document).ready(function () {
 
@@ -238,6 +239,8 @@ $(document).ready(function () {
   //it returns a chord maj
   $(".submit-chord-maj").click(function (event) {
     let chord = $("#chord-maj").first().val();
+    console.log(scale.length)
+    console.log(`${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 4]} ${scale[scale.indexOf(chord) + 7]}`)
     $resultChordMaj.append('<p>Your chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 4]} ${scale[scale.indexOf(chord) + 7]}` + '<p>');
   });
 
