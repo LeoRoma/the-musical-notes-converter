@@ -218,6 +218,7 @@ $(document).ready(function () {
   var $resultNumber = $('#result-number');
   var $resultChordMaj = $('#result-chord-maj');
   var $resultChordMin = $('#result-chord-min');
+  var $resultScaleMaj = $('#result-scale-maj');
 
   //it converts number to note
   $(".submit-number").click(function (event) {
@@ -236,18 +237,23 @@ $(document).ready(function () {
     );
   });
 
-  //it returns a chord maj
+  //it returns a maj chord
   $(".submit-chord-maj").click(function (event) {
     let chord = $("#chord-maj").first().val();
     console.log(scale.length)
     console.log(`${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 4]} ${scale[scale.indexOf(chord) + 7]}`)
-    $resultChordMaj.append('<p>Your chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 4]} ${scale[scale.indexOf(chord) + 7]}` + '<p>');
+    $resultChordMaj.append('<p>Your Maj chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 4]} ${scale[scale.indexOf(chord) + 7]}` + '<p>');
   });
 
-  //it returns a chord min
+  //it returns a min chord
   $(".submit-chord-min").click(function (event) {
     let chord = $("#chord-min").first().val();
-    $resultChordMin.append('<p>Your chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 3]} ${scale[scale.indexOf(chord) + 7]}` + '<p>');
+    $resultChordMin.append('<p>Your min chord is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 3]} ${scale[scale.indexOf(chord) + 7]}` + '<p>');
   });
 
+  // it returns a maj scale 
+  $(".submit-scale-maj").click(function (event) {
+    let chord = $("#scale-maj").first().val();
+    $resultScaleMaj.append('<p>Your Maj scale is: ' + `${scale[scale.indexOf(chord)]} ${scale[scale.indexOf(chord) + 2]} ${scale[scale.indexOf(chord) + 4]} ${scale[scale.indexOf(chord) + 5]} ${scale[scale.indexOf(chord) + 7]} ${scale[scale.indexOf(chord) + 9]} ${scale[scale.indexOf(chord) + 11]}` + '<p>');
+  });
 });
